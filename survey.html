@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+        .color-blend {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin-bottom: 200px;
+            background-image: linear-gradient(to bottom,rgb(128, 0, 107) 0%, #667292 50%, #8d9db6 100%);
+        }
+
+        #title {
+            width: 100%;
+            color: whitesmoke;
+            text-shadow: black;
+            font-size: 36px;
+        }
+
+        #description {
+            font-size: 18px;
+            margin-top: 40px;
+        }
+
+        main {
+            background-color: white;
+            background-position: center;
+            border-radius: 15%;
+            height: 800px;
+            width: 90%;
+            margin-left: 65px;
+
+        }
+        #survey-form {
+            padding: 30px;
+            
+        }
+
+    </style>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body class="color-blend">
+        <h1 id="title">Survey Form</h1>
+        <main>
+            <p id="description"><strong>Let us know how we can improve my website!</strong></p>
+            <form id="survey-form">
+                <label for="fullname" id="name-label">Full Name:<br><input type="text" id="name" required placeholder="Enter your name"></label><br>
+                <label for="email" id="email-label"><br>Email:<br><input type="email" id="email" required placeholder="Enter your email"></label><br>
+                <label for="number" id="number-label"><br>Age:<br><input type="number" id="number" min="18" max="99" placeholder="Enter your age"></label><br>
+                <label for="phone" id="phone-label"></label><br>Phone number:<br><input class="" type="tel" id="phone" placeholder="(123) 456-7890" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}"></label><br>
+                <label for="users"><br>What brings you to my page?<br>
+                <select id="dropdown" name="users">
+                    <option value="recruiter">Job recruiter</option>
+                    <option value="friend">Just visiting</option>
+                </select><br>
+                </label>
+                <label for="definitely"><br>Would you recommend my page to a friend?<br><br><input type="radio" name="page-input" value="definitely">Definitely</label>
+                <label for="maybe"><input type="radio" name="page-input" value="maybe">Maybe</label>
+                <label for="not-sure"><input type="radio" name="page-input" value="not-sure">Not sure</label><br>
+                <label for="instagram"><br>How did you hear about my website?<br><br><input type="checkbox" value="instagram">Instagram</label>
+                <label for="twitter"><input type="checkbox" value="twitter">Twitter</label>
+                <label for="resume"><input type="checkbox" value="resume">Resume</label>
+                <label for="linkedin"><input type="checkbox" value="linkedin">Linkedin</label><br>
+                <br>Let me know of any others ways I can improve my website<br><br>
+                <textarea name="comments" style="width: 400px; height: 100px;"></textarea><br><br>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
